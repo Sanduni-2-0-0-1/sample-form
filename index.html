@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to CSS -->
+    <script type="text/javascript" src="script.js" defer></script> <!-- Link to JS -->
+</head>
+<body>
+    <h1>User Input Form</h1>
+    
+    <form>
+        <p>Name: <input type="text" name="Name" required /></p>
+        <p>Email: <input type="text" name="Email" required /></p>
+        <p>Password: <input type="password" name="password" required /></p>
+        
+        <p>Gender:
+            <input type="radio" name="Gender" value="Male" required />Male
+            <input type="radio" name="Gender" value="Female" required />Female
+        </p>
+        
+        <p>Qualification:
+            <input type="checkbox" name="Qualification" value="O/L" />O/L
+            <input type="checkbox" name="Qualification" value="A/L" />A/L
+            <input type="checkbox" name="Qualification" value="Degree" />Degree
+        </p>
+        
+        <p>Course:
+            <select name="Course">
+                <option value="IT">Select</option>
+                <option value="IT">IT</option>
+                <option value="HRM">HRM</option>
+                <option value="Science">Science</option>
+                <option value="Management">Management</option>
+            </select>
+        </p>
+        
+        <p>Message:</p>
+        <textarea name="message" cols="30" rows="10"></textarea>
+        
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <!-- Hidden confirmation box -->
+    <div id="confirmation"></div>
+</body>
+</html>
